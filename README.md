@@ -10,14 +10,16 @@ A modern, data-driven travel technology platform designed to assist travelers wi
 Travelers often struggle with fragmented tourism data, opaque budget estimations, and generic travel recommendations that do not match their personalized preferences, budget boundaries, or travel pace.
 
 ## 2. Project Objective
-To engineer an end-to-end intelligent travel platform that:
-1. Surfaces structured, high-integrity destination information across Indian states and travel themes.
-2. Provides a **Content-Based Recommendation Engine** using TF-IDF and Cosine Similarity to rank destinations according to active traveler personas.
-3. Provides an interactive **Conversational Travel Assistant** that parses natural-language prompts, tracks dialogue state across turns, asks clarification questions, and connects directly to the recommendation engine.
-4. Provides a **Smart Day-by-Day Trip Planner** that creates realistic daily schedules (Morning, Afternoon, Evening) based on destination activities, duration, and pacing.
-5. Provides a **Smart Travel Budget Intelligence & Optimizer** breaking down expenditures into 5 key categories (Accommodation, Food, Transportation, Activities, Miscellaneous), comparing against user targets, and generating actionable savings levers.
-6. Provides a **Saved Trips & Itinerary Bookmark Manager** enabling travelers to bookmark generated trip plans, inspect schedules and cost breakdowns, compare trips side-by-side, and download plans as formatted JSON or plain-text documents.
-7. Enables intuitive filtering across multi-dimensional criteria (budget, state, rating, category).
+
+The objective of this project is to develop a personalized travel intelligence platform that helps users discover suitable destinations, plan trips, estimate budgets, and save their travel plans based on their preferences.
+
+The system provides:
+
+1. Personalized destination recommendations using TF-IDF and Cosine Similarity.
+2. A conversational travel assistant for collecting travel preferences through natural-language queries.
+3. A day-by-day itinerary planner based on destination activities, duration, interests, and travel style.
+4. A budget planner that estimates expenses across accommodation, food, transportation, activities, and miscellaneous costs.
+5. A saved trips module for viewing, comparing, and exporting generated travel plans.
 
 ---
 
@@ -90,8 +92,8 @@ To engineer an end-to-end intelligent travel platform that:
 ---
 
 ## 4. Technology Stack
-- **Language:** Python 3.11+
-- **Frontend / Application Framework:** Streamlit (v1.30+)
+- **Language:** Python 3.11
+- **Frontend / Application Framework:** Streamlit 
 - **Data Manipulation:** Pandas
 - **Machine Learning:** Scikit-learn (`TfidfVectorizer`, `cosine_similarity`)
 - **Testing:** Custom test suites (`test_basic.py`, `test_recommendations.py`, `test_query_parser.py`, `test_conversation.py`, `test_itinerary.py`, `test_budget.py`, `test_saved_trips.py`, `verify_differentiation.py`)
